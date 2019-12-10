@@ -1,0 +1,70 @@
+<html>
+
+<head>
+  <title>Login!</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+  <style>
+    
+  </style>
+</head>
+
+<body>
+  <div id="background"></div>
+  <link href="login.css" rel="stylesheet">
+  </head>
+
+  <body  id="login" onload="dipSesh()">
+    <div class="cover-container d-flex w-120 h-100 p-3 mx-auto flex-column" >
+      <header>
+
+        <div id="headerCard" class="card">
+
+          <img id="navlogo" src="finalogo.jpg">
+          <div class="inner">
+            <nav class="navbar navbar-dark bg-dark justify-content-center">
+              <a class="nav-link active" href="./index.html">Home</a>
+              <a id="account" class="nav-link" href="./profile.html">My Profile</a>
+              <a class="nav-link" href="./recommendations.html">Recommendations</a>
+            </nav>
+          </div>
+
+        </div>
+      </header>
+
+      <main role="main" class="inner cover" id="main">
+
+
+        <div class="card" id="loginCard" >
+          <form onsubmit="login(); return false;" id="form">
+            <h1 class="cover-heading">Login</h1>
+            <div class="input-group input-group-sm mb-3">
+              <div class="input-group-prepend">
+                <span class="input-group-text" id="inputGroup-sizing-sm">Username</span>
+              </div>
+              <input id="userName" type="text" class="form-control" aria-label="Small"
+                aria-describedby="inputGroup-sizing-sm">
+            </div>
+
+
+
+
+
+            <div class="input-group input-group-sm mb-3">
+              <div class="input-group-prepend">
+                <span class="input-group-text" id="inputGroup-sizing-sm">password</span>
+              </div>
+              <input id="password" type="text" class="form-control" aria-label="Small"
+                aria-describedby="inputGroup-sizing-sm">
+            </div>
+
+            <button type="submit" class="btn btn-primary" onclick="login()">login</button>
+          </form>
+        </div>
+        
+      </main>
+      <script src="./login.js"></script>
+  </body>
+
+</html>

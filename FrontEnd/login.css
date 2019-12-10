@@ -1,0 +1,70 @@
+#main{
+    align-self: center;
+    text-align: -webkit-center;
+    
+    
+
+}
+.bd-placeholder-img {
+    font-size: 1.125rem;
+    text-anchor: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+
+  @media (min-width: 768px) {
+    .bd-placeholder-img-lg {
+      font-size: 3.5rem;
+    }
+  }
+
+  #login {
+
+    position: relative;
+    
+  }
+
+  #background {
+    width: 100vw;
+    height: 100vh;
+    background-image: url('BlackGarden.jpg');
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    z-index: -10;
+  }
+
+  #form {
+
+    align-self: center;
+  }
+
+  #bottomhover {
+    height: 40vh;
+  }
+
+  #navlogo {
+    background-image: url('finalogo.jpg');
+    width: 80vh;
+    position: relative;
+    align-self: center;
+
+  }
+
+  #headerCard {
+    background-color: black;
+  }
+  #loginCard{
+    width: 30vw;
+    height: 17vw;
+    text-align: center;
+    justify-content: center;
+    position: relative;
+    background: #8080809c;
+    top: 100px;
+    
+
+  }
+ 

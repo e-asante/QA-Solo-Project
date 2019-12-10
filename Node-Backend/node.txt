@@ -1,0 +1,13 @@
+npm install filename
+node filename.js
+npm init
+npm start 
+
+var lodish = require('./otherstuff.js');
+    console.log(lodish.myFunction());
+
+exports.myFunction = () => {
+    console.log("exporting");
+     return 'hi';
+    };
+

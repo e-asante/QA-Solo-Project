@@ -1,0 +1,183 @@
+<html>
+
+<head>
+  <title>Register!</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+  <style>
+
+  </style>
+</head>
+
+<body>
+  <div id="background"></div>
+  <link href="register.css" rel="stylesheet">
+  </head>
+
+  <body id="getInfo" class="text-center" onload="dipSesh()"">
+     <div class="cover-container d-flex w-120 h-100 p-3 mx-auto flex-column">
+     
+    <header class="masthead mb-auto">
+
+      <div id="headerCard" class="card">
+
+        <img id="navlogo" src="finalogo.jpg">
+        <div class="inner">
+          <nav class="navbar navbar-dark bg-dark justify-content-center">
+            <a class="nav-link active" href="./index.html">Home</a>
+            <a id="account" class="nav-link" href="./profile.html">My Profile</a>
+            <a class="nav-link" href="./recommendations.html">Recommendations</a>
+          </nav>
+        </div>
+
+      </div>
+    </header>
+  
+
+    
+      <main role="main" id="main">
+
+
+
+        <div class="card" style="width: 60rem;">
+          <div id="tophover"></div>
+          <form>
+            <div>
+
+
+              <div class="input-group input-group-sm mb-3">
+                <div class="input-group-prepend">
+                  <span class="input-group-text" id="inputGroup-sizing-sm">Username</span>
+                </div>
+                <input id="userName" type="text" class="form-control" aria-label="Small"
+                  aria-describedby="inputGroup-sizing-sm">
+              </div>
+
+
+
+
+
+              <div class="input-group input-group-sm mb-3">
+                <div class="input-group-prepend">
+                  <span class="input-group-text" id="inputGroup-sizing-sm">password</span>
+                </div>
+                <input id="password" type="text" class="form-control" aria-label="Small"
+                  aria-describedby="inputGroup-sizing-sm">
+              </div>
+
+
+
+              <div class="input-group input-group-sm mb-3">
+                <div class="input-group-prepend">
+                  <span class="input-group-text" id="inputGroup-sizing-sm">favourite game</span>
+
+                </div>
+                <input id="favgame" type="text" class="form-control" aria-label="Small"
+                  aria-describedby="inputGroup-sizing-sm">
+              </div>
+
+
+
+              <div class="input-group">
+                <div class="input-group-prepend">
+                  <span class="input-group-text" id="">Genre1</span>
+                </div>
+                <select class="custom-select" id="genre1">
+                  <option selected>Pick One</option>
+                  <option value="Action">Action</option>
+                  <option value="Adventure">Adventure</option>
+                  <option value="RPG">RPG</option>
+                  <option value="Strategy">Strategy</option>
+                  <option value="Puzzle">Puzzle</option>
+                  <option value="Simulation">Simulation</option>
+                  <option value="Sports">Sports</option>
+                  <option value="NULL">NULL</option>
+                </select>
+
+                <div class="input-group-prepend">
+                  <span class="input-group-text" id="">Genre2</span>
+                </div>
+                <select class="custom-select" id="genre2">
+                  <option selected>Pick One</option>
+                  <option value="Action">Action</option>
+                  <option value="Adventure">Adventure</option>
+                  <option value="RPG">RPG</option>
+                  <option value="Strategy">Strategy</option>
+                  <option value="Puzzle">Puzzle</option>
+                  <option value="Simulation">Simulation</option>
+                  <option value="Sports">Sports</option>
+                  <option value="NULL">NULL</option>
+                </select>
+                <div class="input-group-prepend">
+                  <span class="input-group-text" id="">Genre3</span>
+                </div>
+                <select class="custom-select" id="genre3">
+                  <option selected>Pick One</option>
+                  <option value="Action">Action</option>
+                  <option value="Adventure">Adventure</option>
+                  <option value="RPG">RPG</option>
+                  <option value="Strategy">Strategy</option>
+                  <option value="Puzzle">Puzzle</option>
+                  <option value="Simulation">Simulation</option>
+                  <option value="Sports">Sports</option>
+                  <option value="NULL">NULL</option>
+                </select>
+
+              </div>
+
+
+              <div id="spacer"></div>
+
+
+
+              <div class="input-group">
+                <div class="input-group-prepend">
+
+                </div>
+
+                <label class="input-group-text" for="inputGroupSelect01">Platform</label>
+                <select class="custom-select" id="platform">
+                  <option selected>Pick One</option>
+                  <option value="PS4">PS4</option>
+                  <option value="XBOX ONE">XBOX ONE</option>
+                  <option value="SWITCH">SWITCH</option>
+                  <option value="PC">PC</option>
+                </select>
+                <div class="input-group-prepend">
+
+                </div>
+
+                <label class="input-group-text" for="inputGroupSelect01">Game Type</label>
+                <select class="custom-select" id="gametype">
+                  <option selected>Pick One</option>
+                  <option value="Singleplayer">Singleplayer</option>
+                  <option value="Multiplayer">Multiplayer</option>
+                  <option value="Co-op">Co-op</option>
+
+                </select>
+
+              </div>
+
+
+              <div id="spacer"></div>
+
+
+
+              <button type="submit" class="btn btn-primary" onclick="register()">Register</button>
+
+            </div>
+          </form>
+        </div>
+        
+
+
+
+        <div id=bottomhover></div>
+
+      </main>
+   
+    <script src="./register.js"></script>
+  </body>
+
+</html>

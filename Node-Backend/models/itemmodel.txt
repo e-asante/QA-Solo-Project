@@ -1,0 +1,94 @@
+const express = require("express");
+const itemRouter = require("./home");
+const cors =require('cors');
+const Sequelize = require('sequelize');
+
+var app = express();
+
+var data = [];
+var sequelize = new Sequelize(
+    'mystore',    //DB
+    'root',     //username
+    'password', //password
+    {
+        host: '127.0.0.1',    
+        dialect: 'mysql'
+    }
+);
+const Item = sequelize.define('itemr', { 
+    pd: {
+        type: Sequelize.INTEGER
+        },
+    name: {
+    type: Sequelize.STRING
+    },
+    price: {
+        type: Sequelize.INTEGER
+    }
+});
+
+
+
+app.get('/add', async (req, res) => {
+await Item.create({ pd: 3, name: 'rest', price: 100});
+res.send("Added")
+})
+
+app.get('/findall', async (req, res) => {
+    await   Item.findAll({
+        //ttributes: ["name","price"],
+        order: "name DESC"
+    }).then(function(users) {
+        res.send(users)
+      })
+    
+    });
+app.put('/update', async (req, res) =>{
+    await Item.update({
+        pd: 3, name: 'ressst', price: 10
+        },
+        {
+        where: {name: 'rest'}
+        },
+        res.send('updated')
+    )
+
+});
+
+app.get('/delete', async (req, res) => {
+    await   Item.destroy({
+        where: {name: 'rest'}
+    })
+    res.send("deleted")
+    });
+
+
+
+ Item.sync({force: true}).then(function () {
+    // Table created
+    return Item.create({
+      pd: 1,
+      name: 'Hancock',
+      price: 3
+    })
+});
+app.use(cors());
+app.use(express.json());
+app.use('/',(req, res, next) => {
+    
+    next();
+});
+
+app.use('/home',itemRouter);
+
+
+app.listen(8080);
+
+sequelize
+  .authenticate()
+  .then(() => {
+    console.log('Connection has been established successfully.');
+  })
+  .catch(err => {
+    console.error('Unable to connect to the database:', err);
+  });

@@ -1,0 +1,68 @@
+
+.masthead-brand{
+    
+}
+.profilecontainer{
+    text-decoration: aqua;
+    text-size-adjust: 10;
+    width: 600px;
+}
+.btn btn-lg btn-secondary{
+    text-decoration: aqua;
+    text-size-adjust: 5;
+}
+.main{
+    text-align: center;
+    position: fixed;;
+    padding-left: 42%;
+
+}
+.bd-placeholder-img {
+    font-size: 1.125rem;
+    text-anchor: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+
+  @media (min-width: 768px) {
+    .bd-placeholder-img-lg {
+      font-size: 3.5rem;
+    }
+  }
+  #background {
+                    width: 100vw;
+                    height: 100vh;
+                    background-image: url('absbg.jpg');
+                    position: fixed;
+                    top: 0px;
+                    left: 0px;
+                    z-index: -10;
+  }
+  #getInfo {
+                    
+                    position: relative;
+                  }
+                  #tophover{
+                    height: 20vh;
+                  }
+                  #bottomhover{
+                    height: 20vh;
+                  }
+                  #spacer{
+                    height: 25px;
+                  }
+                  #main{
+                    place-self: center;
+                  }
+                  #navlogo {
+                    background-image: url('finalogo.jpg');
+                    width: 80vh;
+                    position: relative;
+                    align-self: center;
+              
+                  }
+                  #headerCard{
+                    background-color: black;
+                  }

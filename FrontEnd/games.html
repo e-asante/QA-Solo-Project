@@ -1,0 +1,67 @@
+<html>
+    <head>
+        <title>Recommendations!</title>
+       <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+        <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+      #background {
+                        width: 100vw;
+                        height: 100vh;
+                        background-image: url('absbg.jpg');
+                        position: fixed;
+                        top: 0px;
+                        left: 0px;
+                        z-index: -10;
+      }
+      #recommended{
+        background-color: rgb(68, 66, 60);
+        background-blend-mode: hard-light;
+        
+        text-align: center;
+      }
+    </style>
+    </head>
+    <body>
+        <div id="background"></div>
+        
+    <link href="cover.css" rel="stylesheet">
+  </head>
+  <body class="text-center" onload="dipSesh()>
+    <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
+  <header class="masthead mb-auto">
+    <div class="inner">
+      <h3 class="masthead-brand">The Great Game Recommender!</h3>
+      <nav class="nav nav-masthead justify-content-center">
+        <a class="nav-link active" href="./index.html">Home</a>
+        <a class="nav-link" href="./profile.html">My Profile</a>
+        <a class="nav-link" href="./recommendations.html">Recommendations</a>
+      </nav>
+    </div>
+  </header>     
+  
+  <main role="main" class="inner cover">
+    <h1 class="cover-heading">Your Recommendations.</h1>
+    <div id="recommended"></div>
+    
+    <p class="lead">
+      <a  href="#" class="btn btn-lg btn-secondary" onclick="getRec()">All games</a>
+    </p>
+  </main>
+        <script src = "./games.js"></script>
+    </body>
+</html>
